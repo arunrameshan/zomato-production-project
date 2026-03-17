@@ -64,7 +64,7 @@ resource "aws_eip_association" "webserver" {
 }
 
 
-resource "aws_route53_record" "webserver" {
+resource "aws_route53_record" "webserver-1" {
 
   zone_id = data.aws_route53_zone.domain.zone_id
   name    = var.hostname
